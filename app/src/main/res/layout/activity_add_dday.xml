@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddDdayActivity"
+    android:background="@color/mainpink2">
+    <ImageView
+        android:id="@+id/iv_addDday_pinkline"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/mainpink"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_mainlogo"
+        app:layout_constraintTop_toTopOf="@id/iv_addDday_pinkline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/iv_addDday_pinkline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="기념일 추가"
+        android:textColor="@color/textcolor"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <ImageView
+        android:id="@+id/iv_addDday_close"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/left1"
+        android:clickable="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_addDday_pinkline"
+        app:layout_constraintBottom_toBottomOf="@id/iv_addDday_pinkline"
+        android:layout_marginLeft="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@id/iv_addDday_pinkline">
+
+        <TextView
+            android:id="@+id/tv_addDday_please_Choosedate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginVertical="30dp"
+            android:text="새 기념일 날짜를 선택해주세요."
+            android:textColor="@color/textcolor"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_addDday_datepicker"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="#ffffff"
+            android:text="날짜선택" />
+
+        <TextView
+            android:id="@+id/tv_addDday_Showdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text=""
+            android:textColor="#000000"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_addDday_Newdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:text="새 기념일의 이름을 "
+            android:textColor="@color/textcolor"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_addDday_Newdate2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:text="입력해주세요. "
+            android:textColor="@color/textcolor"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_addDday_NewDateName"
+            android:layout_width="170dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:background="#ffffff"
+            android:ems="3"
+            android:hint="입력해주세요!"
+            android:singleLine="true" />
+
+        <LinearLayout
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <Button
+                android:id="@+id/btn_addDay_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@color/mainpink"
+                android:text="이전" />
+
+            <Button
+                android:id="@+id/btn_addDay_Add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@color/mainpink"
+                android:text="저장" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

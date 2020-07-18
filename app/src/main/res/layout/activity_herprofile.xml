@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HerprofileActivity"
+    >
+
+    <ImageView
+        android:id="@+id/iv_Herprofile_pinkline"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/mainpink"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_Herproflielogo"
+        app:layout_constraintTop_toTopOf="@id/iv_Herprofile_pinkline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/iv_Herprofile_pinkline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="상대 프로필"
+        android:textColor="@color/textcolor"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <ImageView
+        android:id="@+id/iv_Herprofile_close"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/left1"
+        android:textSize="25sp"
+        android:clickable="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_Herprofile_pinkline"
+        app:layout_constraintBottom_toBottomOf="@id/iv_Herprofile_pinkline"
+        android:layout_marginLeft="15dp"
+        />
+    <ImageView
+        android:id="@+id/iv_Herprofile_girl"
+        app:layout_constraintTop_toBottomOf="@id/iv_Herprofile_pinkline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/profile"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="50dp"
+        android:clickable="true"/>
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="left"
+        app:layout_constraintTop_toBottomOf="@id/iv_Herprofile_girl"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="30dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이           름 : "
+            android:textStyle="bold"
+            android:textColor="@color/textcolor"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="이   메    일 : "
+            android:textStyle="bold"
+            android:textColor="@color/textcolor"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="전 화 번 호 : "
+            android:textStyle="bold"
+            android:textColor="@color/textcolor"
+            android:textSize="20sp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="left"
+        app:layout_constraintTop_toBottomOf="@id/iv_Herprofile_girl"
+
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="30dp"
+        >
+        <TextView
+            android:id="@+id/tv_Herprofile_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아이유"
+            android:textStyle="bold"
+            android:textColor="@color/textcolor"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:id="@+id/tv_Herprofile_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="iu@naver.com "
+            android:textStyle="bold"
+            android:textColor="@color/textcolor"
+            android:textSize="20sp"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:id="@+id/tv_Herprofile_phonenum"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="010 5555 6666"
+            android:textStyle="bold"
+            android:textColor="@color/textcolor"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_Herprofile_Chatting"
+        android:layout_width="80dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_Herprofile_Call"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1"
+        android:background="@drawable/chat1"/>
+
+    <Button
+        android:id="@+id/btn_Herprofile_Call"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btn_Herprofile_Chatting"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2"
+        android:background="@drawable/call1"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

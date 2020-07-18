@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "702492751315",
+    "firebase_url": "https://doran-5661b.firebaseio.com",
+    "project_id": "doran-5661b",
+    "storage_bucket": "doran-5661b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:702492751315:android:f583106032d7c551032b26",
+        "android_client_info": {
+          "package_name": "com.example.doran"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "702492751315-ogm2te71mt62tmagoq7ticacrh4frsm2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGytOxBEx_8OeAEgnr3XR20pJWd1LneBE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "702492751315-ogm2te71mt62tmagoq7ticacrh4frsm2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

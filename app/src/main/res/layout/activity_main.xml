@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/iv_main_pinkline"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/mainpink"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/iv_main_image"/>
+
+    <TextView
+        android:id="@+id/tv_mainlogo"
+        app:layout_constraintTop_toTopOf="@id/iv_main_pinkline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/iv_main_pinkline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="도란도란"
+        android:textColor="@color/textcolor"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <ImageView
+        android:id="@+id/iv_setting_icon"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/iv_main_pinkline"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/setting1"
+        android:paddingRight="5dp"
+        />
+    <!--    android:scaleType="fitCenter"-->
+<!--    android:adjustViewBounds="true"-->
+    <ImageView
+        android:clickable="true"
+        android:id="@+id/iv_main_image"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/couple1"
+        android:scaleType="fitXY"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_main_pinkline" />
+    <ImageView
+        android:clickable="true"
+        android:id="@+id/iv_main_imageClick"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:adjustViewBounds="true"
+        android:background="#44000000"
+        android:scaleType="fitXY"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iv_main_pinkline" />
+
+    <TextView
+        android:id="@+id/tv_main_promise"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="나의 다짐을 입력해 주세요."
+        app:layout_constraintTop_toBottomOf="@id/iv_main_image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="@color/textcolor"
+        android:textSize="19sp"/>
+
+<!--    <TextView-->
+<!--        android:id="@+id/tv_day1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="사랑한지"-->
+<!--        app:layout_constraintTop_toTopOf="@id/iv_main_image"-->
+<!--        app:layout_constraintBottom_toBottomOf="@id/iv_main_image"-->
+<!--        app:layout_constraintLeft_toLeftOf="@id/iv_main_image"-->
+<!--        app:layout_constraintRight_toRightOf="@id/iv_main_image"-->
+<!--        android:textColor="#ffffff"-->
+<!--        android:textSize="20sp"-->
+<!--        android:textStyle="bold"-->
+<!--        />-->
+    <TextView
+        android:id="@+id/tv_DAY"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        app:layout_constraintTop_toTopOf="@id/iv_main_image"
+        app:layout_constraintLeft_toLeftOf="@id/iv_main_image"
+        app:layout_constraintRight_toRightOf="@id/iv_main_image"
+        app:layout_constraintBottom_toBottomOf="@id/iv_main_image"
+        android:textColor="#ffffff"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        />
+
+
+    <ImageView
+        android:id="@+id/iv_Myprofile"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/profile"
+
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/Heart"
+        app:layout_constraintTop_toBottomOf="@id/iv_main_image"
+        android:layout_margin="10dp"
+        android:clickable="true"
+
+        />
+    <TextView
+        android:id="@+id/tv_Myname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/iv_Myprofile"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/Heart"
+        android:layout_marginTop="5dp"/>
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/Heart"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintLeft_toRightOf="@id/iv_Myprofile"
+        app:layout_constraintRight_toLeftOf="@id/iv_Herprofile"
+        app:layout_constraintTop_toBottomOf="@+id/iv_main_image"
+        app:lottie_rawRes="@raw/mainheart"
+        />
+
+    <ImageView
+        android:id="@+id/iv_Herprofile"
+        android:layout_width="120dp"
+
+        android:layout_height="120dp"
+        android:src="@drawable/profile"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintLeft_toRightOf="@id/Heart"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv_main_image"
+        android:clickable="true"/>
+    <TextView
+        android:id="@+id/tv_Hername"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/iv_Herprofile"
+       app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/Heart"
+        android:layout_marginTop="5dp"/>
+
+
+    <!--    app:layout_constraintVertical_bias="0.661"-->
+    <LinearLayout
+
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainpink"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <Button
+            android:id="@+id/btn_main_Dday"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/mainpink2"
+            android:text="기념일"
+            android:textColor="@color/textcolor"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_main_Chat"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/mainpink2"
+            android:text="채팅"
+            android:textColor="@color/textcolor"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_main_Story"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/mainpink2"
+            android:text="추억공유"
+            android:textColor="@color/textcolor"
+            android:textSize="16sp" />
+
+        <Button
+            android:id="@+id/btn_main_Datepick"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:background="@color/mainpink2"
+            android:text="데이트룰렛"
+            android:textColor="@color/textcolor"
+            android:textSize="16sp" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

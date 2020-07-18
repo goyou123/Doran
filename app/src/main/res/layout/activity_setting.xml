@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingActivity">
+
+    <ImageView
+        android:id="@+id/iv_Setting_pinkline"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/mainpink"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_mainlogo"
+        app:layout_constraintTop_toTopOf="@id/iv_Setting_pinkline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/iv_Setting_pinkline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="환경설정"
+        android:textColor="@color/textcolor"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+
+    <ImageView
+        android:id="@+id/iv_Setting_close"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/left1"
+        android:clickable="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_Setting_pinkline"
+        app:layout_constraintBottom_toBottomOf="@id/iv_Setting_pinkline"
+        android:layout_marginLeft="15dp"/>
+
+    <TextView
+        android:id="@+id/tv_Setting_Logout"
+        android:text="로그아웃"
+        android:textColor="@color/textcolor"
+        android:textSize="20dp"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/iv_Setting_pinkline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:clickable="true"/>
+    <ImageView
+        app:layout_constraintTop_toBottomOf="@id/tv_Setting_Logout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/textcolor"/>
+
+    <TextView
+        android:id="@+id/tv_Setting_Signout"
+        android:text="회원탈퇴"
+        android:textColor="@color/textcolor"
+        android:textSize="20dp"
+        android:padding="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_Setting_Logout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:clickable="true"/>
+    <ImageView
+        app:layout_constraintTop_toBottomOf="@id/tv_Setting_Signout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/textcolor"/>
+    <TextView
+        android:id="@+id/tv_Setting_BreakConnect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="상대방과 연결 끊기"
+        android:textColor="@color/textcolor"
+        android:textSize="20dp"
+        android:padding="12dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_Setting_Signout"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:clickable="true"
+
+        />
+    <ImageView
+        app:layout_constraintTop_toBottomOf="@id/tv_Setting_BreakConnect"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/textcolor"/>
+<!--    <TextView-->
+<!--        android:id="@+id/tv_Setting_AutoLogin"-->
+<!--        android:text="자동 로그인"-->
+<!--        android:textColor="@color/textcolor"-->
+<!--        android:textSize="20dp"-->
+<!--        android:padding="12dp"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tv_Setting_BreakConnect"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--       />-->
+<!--    <Switch-->
+<!--        android:id="@+id/Setting_Switch"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        app:layout_constraintRight_toRightOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/tv_Setting_BreakConnect"-->
+<!--        android:padding="20dp"-->
+<!--       />-->
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

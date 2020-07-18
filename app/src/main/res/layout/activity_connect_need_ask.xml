@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Connect_needAskActivity"
+    android:background="@color/mainpink2">
+    
+    <TextView
+        android:id="@+id/tv_Askvalue_ChangeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/tv_ConnectFirst"
+        android:text=""
+        android:textSize="19sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/tv_ConnectFirst"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="상대방을 먼저 등록해주세요~"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/textcolor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.365" />
+
+    <EditText
+        android:id="@+id/et_Connect_Email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_ConnectFirst"
+        android:background="#ffffff"
+        android:layout_marginHorizontal="50dp"
+        android:hint="상대방의 이메일을 입력해주세요"
+        android:textSize="20sp"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"/>
+    
+<!--    <Button-->
+<!--        android:id="@+id/btn_back"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="뒤로가기"-->
+<!--        app:layout_constraintTop_toBottomOf="@id/et_Connect_Email"-->
+<!--        app:layout_constraintRight_toLeftOf="@id/btn_Connect"-->
+<!--        app:layout_constraintLeft_toLeftOf="parent"-->
+<!--        android:layout_marginTop="50dp"/>-->
+    <Button
+        android:id="@+id/btn_Connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="신청하기"
+        app:layout_constraintTop_toBottomOf="@id/et_Connect_Email"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="50dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

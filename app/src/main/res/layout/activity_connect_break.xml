@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ConnectBreakActivity">
+
+    <ImageView
+        android:id="@+id/iv_Break_pinkline"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/mainpink"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_Breaklogo"
+        app:layout_constraintTop_toTopOf="@id/iv_Break_pinkline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/iv_Break_pinkline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="연결 끊기"
+        android:textColor="@color/textcolor"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <ImageView
+        android:id="@+id/iv_Break_close"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/left1"
+        android:textSize="25sp"
+        android:clickable="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_Break_pinkline"
+        app:layout_constraintBottom_toBottomOf="@id/iv_Break_pinkline"
+        android:layout_marginLeft="15dp"
+        />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/iv_Break_pinkline"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/iv_Break_Warning"
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/warning"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_Break_pinkline" />
+
+            <TextView
+                android:id="@+id/tv_Break_beforebreak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:text="상대방과 연결을 끊기 전에 꼭 확인해 주세요!"
+                android:textColor="#000000"
+                android:textSize="17sp"
+                android:textStyle="bold"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iv_Break_Warning" />
+
+
+            <TextView
+                android:id="@+id/num2"
+                android:layout_marginTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="5dp"
+                android:text="- 두 분의 자료를 복구할 수 있는 기간은 연결을 끊은 시점으로부터 60일입니다. 자료 복구나 백업을
+원하신다면 자료 복구기간 내에 시도해 주세요."
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_Break_beforebreak" />
+
+            <TextView
+                android:id="@+id/num3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="30dp"
+                android:paddingVertical="5dp"
+                android:text="- 자료 복구기간이 만료되면 도란도란에 저장되어 있는 두분의 모든 자료 및 데이터는 영구적으로 삭제되며
+삭제 후 복구가 불가능합니다. 연결 끊기 시 부디 신중하게 선택해 주시기 바랍니다."
+                android:textColor="#000000"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/num2" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/num3">
+
+                <TextView
+                    android:id="@+id/tv_Break_lastask"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="바다님과의 연결을 끊으시겠어요?"
+                    android:textColor="#000000"
+                    android:textSize="17sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="- 우리가 함게한 기간 -"
+                    android:textColor="#000000" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_Firstdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/textcolor" />
+                    <!--            <TextView-->
+
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:text="~"/>-->
+                    <!--            <TextView-->
+                    <!--                android:id="@+id/tv_firstdate"-->
+                    <!--                android:layout_width="wrap_content"-->
+                    <!--                android:layout_height="wrap_content"-->
+                    <!--                android:text="2020.02.02"/>-->
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="- 복구 / 백업 가능한 기간 (60일) -"
+                    android:textColor="#000000" />
+
+                <TextView
+                    android:id="@+id/tv_Break_BackUpDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textColor="@color/textcolor" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="위 내용을 모두 확인했습니다."
+                        android:textColor="#000000" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_break"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_BreakButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="15dp"
+                    android:background="#F39393"
+                    android:text="연결끊기"
+                    android:textColor="#ffffff"
+                    android:textStyle="bold"
+                    android:clickable="false"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

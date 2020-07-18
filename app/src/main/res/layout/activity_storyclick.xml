@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StoryclickActivity">
+
+    <ImageView
+        android:id="@+id/iv_Storyclick_pinkline"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="@color/mainpink"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv_Storyclicklogo"
+        app:layout_constraintTop_toTopOf="@id/iv_Storyclick_pinkline"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/iv_Storyclick_pinkline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="스토리 상세 페이지"
+        android:textColor="@color/textcolor"
+        android:textStyle="bold"
+        android:textSize="20dp"/>
+    <ImageView
+        android:id="@+id/iv_Storyclick_close"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/left1"
+        android:textSize="25sp"
+        android:clickable="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iv_Storyclick_pinkline"
+        app:layout_constraintBottom_toBottomOf="@id/iv_Storyclick_pinkline"
+        android:layout_marginLeft="15dp"
+        />
+    <View
+        android:id="@+id/line"
+        app:layout_constraintTop_toBottomOf="@id/iv_Storyclick_pinkline"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        android:layout_marginBottom="2dp"/>
+    <Button
+        android:id="@+id/btn_Storyclick_edit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/btn_Storyclick_delete"
+
+        android:text="수정"
+        android:background="@color/mainpink2"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"/>
+
+    <Button
+        android:id="@+id/btn_Storyclick_delete"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/line"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/btn_Storyclick_edit"
+        android:text="삭제"
+        android:background="@color/mainpink2"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="5dp"/>
+    
+    <ImageView
+        android:id="@+id/iv_Storyclick_image"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        app:layout_constraintTop_toBottomOf="@id/btn_Storyclick_delete"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="5dp"
+        android:background="#ffffff"/>
+    
+    <View
+        android:id="@+id/line2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"
+        app:layout_constraintTop_toBottomOf="@id/iv_Storyclick_image"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/tv_Storyclick_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="제목"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:textColor="@color/textcolor"
+        app:layout_constraintTop_toBottomOf="@id/line2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="15dp"
+        android:background="@color/mainpink"
+        />
+    
+    <TextView
+        android:id="@+id/tv_Storyclick_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_Storyclick_name"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:text="내용입니당~~"
+        android:textSize="18sp"
+        android:paddingLeft="15dp"
+        android:paddingVertical="15dp"
+        android:background="@color/mainpink2"/>
+    
+    <TextView
+        android:id="@+id/tv_Storyclick_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2020.02.18"
+        app:layout_constraintTop_toBottomOf="@+id/line2"
+        app:layout_constraintRight_toRightOf="parent"
+        android:padding="5dp"
+        android:textColor="@color/textcolor"
+        android:textSize="15sp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

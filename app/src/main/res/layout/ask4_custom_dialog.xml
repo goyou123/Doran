@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <TextView
+        android:id="@+id/Dialg_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:textColor="@color/textcolor"
+        android:textSize="16dp"
+        android:text="♥커플 요청 수락 ♥"
+        android:background="@color/mainpink"
+       />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="신청하신 커플 요청이 수락되었습니다. "
+        android:gravity="center"
+        android:paddingTop="30dp"
+        android:textColor="@color/textcolor"
+       />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textcolor"
+        android:text="이쁜 사랑 하세요~~ "
+        android:gravity="center"
+       android:paddingTop="15dp"
+        android:paddingBottom="30dp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+
+    <Button
+        android:id="@+id/btn_yes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:background="@color/mainpink"
+        android:text="확인"
+        android:textColor="@color/textcolor"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000"/>
+
+
+
+
+</LinearLayout>
